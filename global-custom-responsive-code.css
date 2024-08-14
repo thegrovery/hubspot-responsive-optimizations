@@ -1,0 +1,24 @@
+/* ============================================================ */
+/*
+	Alec's Actually Responsive Hubspot CSS Code
+	- Overrides Hubspot font sizes with custom relative font sizes and clamp() math functions
+	- Notes content
+*/
+/* ============================================================ */
+
+:root{
+    /* 
+        Note: because these elements are considered display/design 
+        text, they are allowed to break accessibility reqs and 
+        use viewport units for sizing.
+    */
+    --customHeroH1: clamp(24px, 4.25vw, 65px);
+    --customHeroSubhead: clamp(16px, 2.25vw, 25px);
+}
+
+.off__toc.hero__banner__content-title-el{
+    font-size: clamp(24px, 4.25vw, 65px) !important;
+}
+#hs_cos_wrapper_module_1706112291935 .hero__banner__content-resume h4{
+    font-size: clamp(16px, 2.25vw, 25px) !important;
+}
