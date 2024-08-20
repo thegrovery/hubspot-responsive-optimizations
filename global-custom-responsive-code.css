@@ -6,19 +6,55 @@
 */
 /* ============================================================ */
 
+/* ===== =========================== ===== */
+/* ===== Responsive/Fluid Font Sizes ===== */
+/* ===== =========================== ===== */
 :root{
-    /* 
-        Note: because these elements are considered display/design 
-        text, they are allowed to break accessibility reqs and 
-        use viewport units for sizing.
-    */
-    --customHeroH1: clamp(24px, 4.25vw, 65px);
-    --customHeroSubhead: clamp(16px, 2.25vw, 25px);
+    /* Hero Section */
+    --customHeroH1: clamp(2.2rem, 4vw + 1rem, 4.063rem); /* 36px-65px */
+    --customHeroSubhead: clamp(0.875rem, 5vw - 1rem, 1.5rem); /* 18px-24px */
+    /* Body Sections */
+    --customFontSizeLarge: clamp(1.563rem, 2vw + 1rem, 2.5rem); /* 25px-40px */
+    --customFontSizeMedium: clamp(0.875rem, 5vw - 1rem, 1.5rem); /* 18px-24px */
+    --customFontSizeNormal: 20px; /* Static */
+    --customFontSizeSmall: 16px; /* Static */
+    --customFontSizeDetail: 12px; /* Static */
+}
+/* MOBILE SIZING */
+@media (max-width: 800px) {
+    body{
+        /* Body Sections */
+        --customFontSizeLarge: 25px;         
+        --customFontSizeMedium: 18px;
+        --customFontSizeNormal: 14px;
+        --customFontSizeSmall: 12px;
+        --customFontSizeDetail: 10px;
+    }   
 }
 
-.off__toc.hero__banner__content-title-el{
-    font-size: clamp(24px, 4.25vw, 65px) !important;
+
+/* ===== ============================================================ ===== */
+/* ===== Font Size Classes - directly corresponds with variable names ===== */
+/* ===== ============================================================ ===== */
+.customHeroH1{
+    font-size: var(--customHeroH1);
 }
-#hs_cos_wrapper_module_1706112291935 .hero__banner__content-resume h4{
-    font-size: clamp(16px, 2.25vw, 25px) !important;
+.customHeroSubhead{
+    font-size: var(--customHeroSubhead);
+}
+
+.customFontSizeLarge{
+    font-size: var(--customFontSizeLarge);
+}
+.customFontSizeMedium{
+    font-size: var(--customFontSizeMedium);
+}
+.customFontSizeNormal{
+    font-size: var(--customFontSizeNormal);
+}
+.customFontSizeSmall{
+    font-size: var(--customFontSizeSmall);
+}
+.customFontSizeDetail{
+    font-size: var(--customFontSizeDetail);
 }
