@@ -1,0 +1,20 @@
+<script>
+/* ===== Hubspot Form Submit Event Trigger ===== */ 
+//Hubspot forms always trigger 2 form submit events in Google Analytics using default trigger.
+//Number of form submits gets skewed/doubled - this is the correct trigger to use. 
+window.addEventListener("message", function(event) {
+    if(event.data.eventName == "onFormSubmitted"){
+    //console.log("===== FORM SUBMIT =====");
+    try {
+        //Push event to datalayer
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+        'event': "hubspot_form_submit",
+        });
+        //console.log("===== Form Submit Event Pushed =====");
+    } catch (e) {
+        //console.log("===== Form Submit Event Error =====");
+        }
+    }
+});
+</script>
