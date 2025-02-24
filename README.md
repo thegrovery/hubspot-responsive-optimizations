@@ -9,15 +9,18 @@ Snippets of CSS and HTML code with improved responsive optimizations to use in T
 - Case Study - Audare
 - Case Study - Arm & Hammer
 - Case Study - Eggland's Best
-
-## Up Next to be updated
-
 - Case Study - Pharma Access Support
 - Case Study - Interactive Kiosk Experience
 
-## On-Deck to be updated
+## Up Next to be updated
 
 - Products pages
+  - Greenhouse
+  - CORE
+  - XpoConnect
+
+## On-Deck to be updated
+
 - Solutions pages
 - Blog pages
 - Contact page
